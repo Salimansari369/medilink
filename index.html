@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="MediLinks – Find nearby doctors, book appointments, and get healthcare support instantly." />
+  <title>MediLinks – Connecting Patients with Trusted Healthcare</title>
+  <link rel="stylesheet" href="style.css" />
+  <!-- Favicon emoji fallback -->
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🏥</text></svg>" />
+</head>
+<body>
+
+<!-- ============================================================
+     SHARED NAVBAR
+     ============================================================ -->
+<nav class="navbar" role="navigation" aria-label="Main navigation">
+  <a href="index.html" class="navbar__brand">
+    <div class="navbar__brand-icon" aria-hidden="true">➕</div>
+    MediLinks
+  </a> 
+
+  <!-- Desktop + mobile links -->
+  <ul class="navbar__links" id="navLinks" role="list">
+    <li><a href="index.html"   class="active"  aria-current="page">Home</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="contact.html">Contact</a></li>
+    <li><a href="appointments.html">Appointments</a></li>
+    <li><a href="contact.html" class="navbar__cta">Book Appointment</a></li>
+  </ul>
+
+  <!-- Hamburger for mobile -->
+  <button class="navbar__hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+
+<!-- ============================================================
+     PAGE WRAPPER (fade-in)
+     ============================================================ -->
+<div class="page-wrapper">
+
+  <!-- ── HERO ───────────────────────────────────────────────── -->
+  <section class="hero" aria-labelledby="heroHeadline">
+    <!-- LEFT: copy -->
+    <div class="hero__content">
+      <div class="hero__eyebrow" aria-hidden="true">
+        <span>🟢</span> India's Trusted Health Platform
+      </div>
+
+      <h1 class="hero__headline" id="heroHeadline">
+        Connecting Patients with<br>
+        <span>Trusted Healthcare</span>
+      </h1>
+
+      <p class="hero__sub">
+        Find doctors, book appointments, and get healthcare support in one simple platform — fast, reliable, and built for you.
+      </p>
+
+      <div class="hero__actions">
+        <a href="contact.html" class="btn-primary">
+          📅 Book Appointment
+        </a>
+        <a href="about.html" class="btn-ghost">
+          Learn More →
+        </a>
+      </div>
+
+      <div class="hero__trust">
+        <div class="trust-badge"><span class="icon">👨‍⚕️</span> 1,200+ Doctors</div>
+        <div class="trust-badge"><span class="icon">⭐</span> 4.9 Rating</div>
+        <div class="trust-badge"><span class="icon">🔒</span> Verified Profiles</div>
+      </div>
+    </div>
+
+    <!-- RIGHT: floating illustration -->
+    <div class="hero__visual" aria-hidden="true">
+      <!-- Central doctor card -->
+      <div class="hero__card-main">
+        <div class="avatar">👩‍⚕️</div>
+        <h3>Dr. Priya Sharma</h3>
+        <p>Cardiologist · 12 yrs exp</p>
+        <div class="rating">★★★★★ 4.9</div>
+      </div>
+
+      <!-- Floating mini cards -->
+      <div class="float-card">
+        <div class="fc-icon" style="background:#CCFBF1;">📍</div>
+        <span>2.3 km away</span>
+      </div>
+
+      <div class="float-card">
+        <div class="fc-icon" style="background:#FEF3C7;">⏰</div>
+        <span>Today 3:00 PM</span>
+      </div>
+
+      <div class="float-card">
+        <div class="fc-icon" style="background:#E0F2FE;">🚑</div>
+        <span>24/7 Emergency</span>
+      </div>
+
+      <div class="float-card">
+        <div class="fc-icon" style="background:#F3E8FF;">✅</div>
+        <span>Appointment Confirmed</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── STATS STRIP ─────────────────────────────────────────── -->
+  <div class="stats-strip" aria-label="Key statistics">
+    <div class="stats-strip__grid">
+      <div>
+        <div class="stat__num">1,200+</div>
+        <div class="stat__label">Verified Doctors</div>
+      </div>
+      <div>
+        <div class="stat__num">50K+</div>
+        <div class="stat__label">Appointments Booked</div>
+      </div>
+      <div>
+        <div class="stat__num">30+</div>
+        <div class="stat__label">Specialisations</div>
+      </div>
+      <div>
+        <div class="stat__num">4.9 ⭐</div>
+        <div class="stat__label">Average Rating</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ── SERVICES ────────────────────────────────────────────── -->
+  <section class="section" aria-labelledby="servicesTitle">
+    <div class="section__header">
+      <span class="section__label">What We Offer</span>
+      <h2 class="section__title" id="servicesTitle">Everything You Need, In One Place</h2>
+      <p class="section__sub">From finding specialists to emergency support — MediLinks handles it all, so you can focus on getting better.</p>
+    </div>
+
+    <div class="cards-grid">
+      <!-- Card 1 -->
+      <div class="card">
+        <div class="card__icon card__icon--teal" aria-hidden="true">🔍</div>
+        <h3 class="card__title">Find Nearby Doctors</h3>
+        <p class="card__body">
+          Search verified specialists by location, specialisation, or availability. View ratings, experience, and consultation fees before you decide.
+        </p>
+      </div>
+
+      <!-- Card 2 -->
+      <div class="card">
+        <div class="card__icon card__icon--sky" aria-hidden="true">📅</div>
+        <h3 class="card__title">Book Appointments</h3>
+        <p class="card__body">
+          Schedule in-clinic or video consultations in seconds. Get instant confirmations, reminders, and easy rescheduling — no phone calls needed.
+        </p>
+      </div>
+
+      <!-- Card 3 -->
+      <div class="card">
+        <div class="card__icon card__icon--amber" aria-hidden="true">🚑</div>
+        <h3 class="card__title">Emergency Support</h3>
+        <p class="card__body">
+          Round-the-clock emergency helpline and rapid doctor dispatch. Connect with on-call physicians within minutes — when every second counts.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── HOW IT WORKS ────────────────────────────────────────── -->
+  <section class="section section--alt" aria-labelledby="howTitle">
+    <div class="section__header">
+      <span class="section__label">How It Works</span>
+      <h2 class="section__title" id="howTitle">3 Simple Steps to Better Health</h2>
+    </div>
+
+    <div class="cards-grid">
+      <div class="card">
+        <div class="card__icon card__icon--teal">1️⃣</div>
+        <h3 class="card__title">Create Your Profile</h3>
+        <p class="card__body">Sign up in under a minute. Tell us your location, preferred language, and health history.</p>
+      </div>
+      <div class="card">
+        <div class="card__icon card__icon--sky">2️⃣</div>
+        <h3 class="card__title">Find the Right Doctor</h3>
+        <p class="card__body">Browse specialised, verified doctors nearby. Filter by availability, rating, or consultation type.</p>
+      </div>
+      <div class="card">
+        <div class="card__icon card__icon--amber">3️⃣</div>
+        <h3 class="card__title">Book & Get Treated</h3>
+        <p class="card__body">Pick a time slot, confirm your booking, and receive care — in clinic or via video, whichever suits you.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── TESTIMONIALS ────────────────────────────────────────── -->
+  <section class="section" aria-labelledby="testTitle">
+    <div class="section__header">
+      <span class="section__label">Patient Stories</span>
+      <h2 class="section__title" id="testTitle">What Our Patients Say</h2>
+    </div>
+
+    <div class="cards-grid">
+      <div class="card">
+        <p class="card__body">"Found a fantastic cardiologist near Andheri within minutes. The booking was seamless and the doctor was excellent. MediLinks saved me so much stress."</p>
+        <div style="margin-top:20px; display:flex; align-items:center; gap:12px;">
+          <div style="width:42px;height:42px;border-radius:50%;background:var(--clr-teal-lt);display:grid;place-items:center;font-size:1.3rem;">👩</div>
+          <div><strong style="font-size:.9rem; font-family:var(--ff-display);">Ananya Mehta</strong><br><span style="font-size:.78rem;color:var(--clr-muted);">Mumbai</span></div>
+          <span style="margin-left:auto;color:#F59E0B;font-weight:700;">★★★★★</span>
+        </div>
+      </div>
+
+      <div class="card">
+        <p class="card__body">"The emergency support feature is a lifesaver — literally. At 2 AM I got connected to a doctor in under 5 minutes. Incredible platform."</p>
+        <div style="margin-top:20px; display:flex; align-items:center; gap:12px;">
+          <div style="width:42px;height:42px;border-radius:50%;background:#E0F2FE;display:grid;place-items:center;font-size:1.3rem;">👨</div>
+          <div><strong style="font-size:.9rem; font-family:var(--ff-display);">Rohan Desai</strong><br><span style="font-size:.78rem;color:var(--clr-muted);">Pune</span></div>
+          <span style="margin-left:auto;color:#F59E0B;font-weight:700;">★★★★★</span>
+        </div>
+      </div>
+
+      <div class="card">
+        <p class="card__body">"I manage my entire family's healthcare through MediLinks. Booking for my parents has never been easier. Super clean interface."</p>
+        <div style="margin-top:20px; display:flex; align-items:center; gap:12px;">
+          <div style="width:42px;height:42px;border-radius:50%;background:#FEF3C7;display:grid;place-items:center;font-size:1.3rem;">🧑</div>
+          <div><strong style="font-size:.9rem; font-family:var(--ff-display);">Kavya Nair</strong><br><span style="font-size:.78rem;color:var(--clr-muted);">Bengaluru</span></div>
+          <span style="margin-left:auto;color:#F59E0B;font-weight:700;">★★★★★</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── CTA BAND ─────────────────────────────────────────────── -->
+  <div style="background:linear-gradient(135deg,var(--clr-teal),#0891B2);padding:70px 5%;text-align:center;">
+    <h2 style="font-family:var(--ff-display);font-weight:800;font-size:clamp(1.5rem,3vw,2.2rem);color:#fff;margin-bottom:12px;">
+      Your Health Deserves the Best Care
+    </h2>
+    <p style="color:rgba(255,255,255,0.8);font-size:1rem;margin-bottom:32px;max-width:480px;margin-inline:auto;">
+      Join over 50,000 patients already trusting MediLinks for fast, reliable healthcare.
+    </p>
+    <a href="contact.html" class="btn-primary" style="background:#fff;color:var(--clr-teal);box-shadow:0 4px 20px rgba(0,0,0,.2);">
+      📅 Book Your Appointment
+    </a>
+  </div>
+
+  <!-- ── FOOTER ──────────────────────────────────────────────── -->
+  <footer role="contentinfo">
+    <div class="footer__grid">
+      <div>
+        <div class="footer__brand-name">
+          <div class="icon">➕</div>
+          MediLinks
+        </div>
+        <p class="footer__desc">India's trusted healthcare connection platform. Find doctors, book appointments, and access emergency support — all in one place.</p>
+      </div>
+      <div>
+        <div class="footer__heading">Navigation</div>
+        <ul class="footer__links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="appointments.html">Appointments</a></li>
+          <li><a href="contact.html">Book Appointment</a></li>
+        </ul>
+      </div>
+      <div>
+        <div class="footer__heading">Support</div>
+        <ul class="footer__links">
+          <li><a href="contact.html">Help Centre</a></li>
+          <li><a href="contact.html">Emergency Line</a></li>
+          <li><a href="appointments.html">View Requests</a></li>
+          <li><a href="#">Privacy Policy</a></li>
+          <li><a href="#">Terms of Use</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <span>© 2025 MediLinks. All rights reserved.</span>
+      <span>Made with ❤️ for better healthcare access</span>
+    </div>
+  </footer>
+
+</div><!-- /page-wrapper -->
+
+<script src="script.js"></script>
+</body>
+</html>

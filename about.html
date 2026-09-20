@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="About MediLinks – Our mission, vision, and the team behind India's trusted healthcare platform." />
+  <title>About – MediLinks</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🏥</text></svg>" />
+</head>
+<body>
+
+<!-- ── NAVBAR ──────────────────────────────────────────────── -->
+<nav class="navbar" role="navigation" aria-label="Main navigation">
+  <a href="index.html" class="navbar__brand">
+    <div class="navbar__brand-icon" aria-hidden="true">➕</div>
+    MediLinks
+  </a>
+  <ul class="navbar__links" id="navLinks" role="list">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="about.html" class="active" aria-current="page">About</a></li>
+    <li><a href="contact.html">Contact</a></li>
+    <li><a href="appointments.html">Appointments</a></li>
+    <li><a href="contact.html" class="navbar__cta">Book Appointment</a></li>
+  </ul>
+  <button class="navbar__hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+
+<!-- ── PAGE ──────────────────────────────────────────────────── -->
+<div class="page-wrapper">
+
+  <!-- ── ABOUT HERO ─────────────────────────────────────────── -->
+  <section class="about-hero" aria-labelledby="aboutHeadline">
+    <div class="about-hero__content">
+      <div class="hero__eyebrow" style="animation:none;">🏥 Our Story</div>
+      <h1 class="hero__headline" id="aboutHeadline">
+        Healthcare Made<br>
+        <span>Accessible for All</span>
+      </h1>
+      <p style="font-size:1rem;color:var(--clr-muted);margin-top:18px;line-height:1.75;">
+        MediLinks was founded in 2022 by a team of doctors, technologists, and patient advocates who were frustrated by how hard it was to find good healthcare quickly. We set out to fix that — building a platform that removes friction and puts patients first.
+      </p>
+      <p style="font-size:1rem;color:var(--clr-muted);margin-top:14px;line-height:1.75;">
+        Today, MediLinks serves over 50,000 patients across 20+ cities in India, connecting them with 1,200+ verified specialists and providing round-the-clock emergency support.
+      </p>
+      <div style="margin-top:30px;">
+        <a href="contact.html" class="btn-primary">Get in Touch →</a>
+      </div>
+    </div>
+
+    <div class="about-hero__img" aria-hidden="true">
+      🏥
+    </div>
+  </section>
+
+  <!-- ── MISSION & VISION ───────────────────────────────────── -->
+  <section class="section section--alt" aria-labelledby="mvTitle">
+    <div class="section__header">
+      <span class="section__label">Purpose</span>
+      <h2 class="section__title" id="mvTitle">Mission & Vision</h2>
+      <p class="section__sub">What drives every feature we build and every decision we make.</p>
+    </div>
+
+    <div class="mv-grid">
+      <div class="mv-card">
+        <div class="card__icon card__icon--teal" style="margin-bottom:16px;">🎯</div>
+        <h3>Our Mission</h3>
+        <p>
+          To eliminate the gap between patients and quality healthcare by making doctor discovery, appointment booking, and emergency support instant, transparent, and accessible to everyone in India — regardless of location, language, or income level.
+        </p>
+      </div>
+      <div class="mv-card mv-card--vision">
+        <div class="card__icon card__icon--sky" style="margin-bottom:16px;">🔭</div>
+        <h3>Our Vision</h3>
+        <p>
+          A future where no patient waits hours to see a doctor, no family struggles to find the right specialist, and no emergency goes unanswered. We envision MediLinks as the infrastructure layer of Indian healthcare — trusted, ubiquitous, and life-saving.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── STATS ──────────────────────────────────────────────── -->
+  <div class="stats-strip" aria-label="Platform impact statistics">
+    <div class="stats-strip__grid">
+      <div>
+        <div class="stat__num">50K+</div>
+        <div class="stat__label">Patients Served</div>
+      </div>
+      <div>
+        <div class="stat__num">1,200+</div>
+        <div class="stat__label">Verified Doctors</div>
+      </div>
+      <div>
+        <div class="stat__num">20+</div>
+        <div class="stat__label">Cities Covered</div>
+      </div>
+      <div>
+        <div class="stat__num">99%</div>
+        <div class="stat__label">Patient Satisfaction</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ── WHY CHOOSE US ──────────────────────────────────────── -->
+  <section class="section" aria-labelledby="whyTitle">
+    <div class="section__header">
+      <span class="section__label">Why MediLinks</span>
+      <h2 class="section__title" id="whyTitle">Why Choose MediLinks?</h2>
+      <p class="section__sub">We've rethought every step of the healthcare journey, from search to treatment.</p>
+    </div>
+
+    <div class="cards-grid">
+      <!-- Card: Trusted Doctors -->
+      <div class="card">
+        <div class="card__icon card__icon--teal" aria-hidden="true">🏅</div>
+        <h3 class="card__title">Trusted Doctors</h3>
+        <p class="card__body">
+          Every doctor on MediLinks undergoes a rigorous 7-step verification process — credential checks, peer reviews, and patient feedback monitoring. You only see doctors we'd trust with our own families.
+        </p>
+      </div>
+
+      <!-- Card: Easy Booking -->
+      <div class="card">
+        <div class="card__icon card__icon--sky" aria-hidden="true">⚡</div>
+        <h3 class="card__title">Easy Booking</h3>
+        <p class="card__body">
+          Book a consultation in under 60 seconds. No phone queues, no paperwork. Choose in-clinic or video, pick your slot, and receive a confirmed booking instantly on your phone.
+        </p>
+      </div>
+
+      <!-- Card: Patient First -->
+      <div class="card">
+        <div class="card__icon card__icon--amber" aria-hidden="true">❤️</div>
+        <h3 class="card__title">Patient-First Approach</h3>
+        <p class="card__body">
+          Every product decision starts with one question: "Does this make the patient's life easier?" From accessible UI to 24/7 support agents, patients are never an afterthought.
+        </p>
+      </div>
+
+      <!-- Card: Transparent Pricing -->
+      <div class="card">
+        <div class="card__icon card__icon--teal" aria-hidden="true">💰</div>
+        <h3 class="card__title">Transparent Pricing</h3>
+        <p class="card__body">
+          Consultation fees are displayed upfront — no hidden charges, no surprise bills. You always know exactly what you'll pay before confirming your appointment.
+        </p>
+      </div>
+
+      <!-- Card: Data Privacy -->
+      <div class="card">
+        <div class="card__icon card__icon--sky" aria-hidden="true">🔐</div>
+        <h3 class="card__title">Your Data, Protected</h3>
+        <p class="card__body">
+          Your health data is encrypted end-to-end and never sold. We comply fully with India's Digital Personal Data Protection Act and international HIPAA standards.
+        </p>
+      </div>
+
+      <!-- Card: Support -->
+      <div class="card">
+        <div class="card__icon card__icon--amber" aria-hidden="true">🤝</div>
+        <h3 class="card__title">24/7 Human Support</h3>
+        <p class="card__body">
+          Real people, any time. Our support team is available around the clock to help you find the right doctor, reschedule appointments, or navigate an emergency.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── TEAM ───────────────────────────────────────────────── -->
+  <section class="section section--alt" aria-labelledby="teamTitle">
+    <div class="section__header">
+      <span class="section__label">The People Behind MediLinks</span>
+      <h2 class="section__title" id="teamTitle">Meet Our Leadership</h2>
+    </div>
+
+    <div class="team-grid">
+      <div class="team-card">
+        <div class="team-card__avatar">👨‍⚕️</div>
+        <div class="team-card__name">Dr. Arjun Mehta</div>
+        <div class="team-card__role">Co-Founder & Chief Medical Officer</div>
+      </div>
+      <div class="team-card">
+        <div class="team-card__avatar">👩‍💻</div>
+        <div class="team-card__name">Shreya Patel</div>
+        <div class="team-card__role">Co-Founder & CTO</div>
+      </div>
+      <div class="team-card">
+        <div class="team-card__avatar">👨‍💼</div>
+        <div class="team-card__name">Vikram Rao</div>
+        <div class="team-card__role">Chief Executive Officer</div>
+      </div>
+      <div class="team-card">
+        <div class="team-card__avatar">👩‍🔬</div>
+        <div class="team-card__name">Dr. Nisha Gupta</div>
+        <div class="team-card__role">Head of Doctor Relations</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── CTA BAND ────────────────────────────────────────────── -->
+  <div style="background:linear-gradient(135deg,var(--clr-teal),#0891B2);padding:70px 5%;text-align:center;">
+    <h2 style="font-family:var(--ff-display);font-weight:800;font-size:clamp(1.5rem,3vw,2.2rem);color:#fff;margin-bottom:12px;">
+      Ready to Experience Better Healthcare?
+    </h2>
+    <p style="color:rgba(255,255,255,0.8);font-size:1rem;margin-bottom:32px;">
+      Book your first appointment today — no registration fees, ever.
+    </p>
+    <a href="contact.html" class="btn-primary" style="background:#fff;color:var(--clr-teal);box-shadow:0 4px 20px rgba(0,0,0,.2);">
+      📅 Book Appointment
+    </a>
+  </div>
+
+  <!-- ── FOOTER ──────────────────────────────────────────────── -->
+  <footer role="contentinfo">
+    <div class="footer__grid">
+      <div>
+        <div class="footer__brand-name">
+          <div class="icon">➕</div>
+          MediLinks
+        </div>
+        <p class="footer__desc">India's trusted healthcare connection platform. Find doctors, book appointments, and access emergency support — all in one place.</p>
+      </div>
+      <div>
+        <div class="footer__heading">Navigation</div>
+        <ul class="footer__links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="appointments.html">Appointments</a></li>
+          <li><a href="contact.html">Book Appointment</a></li>
+        </ul>
+      </div>
+      <div>
+        <div class="footer__heading">Support</div>
+        <ul class="footer__links">
+          <li><a href="contact.html">Help Centre</a></li>
+          <li><a href="contact.html">Emergency Line</a></li>
+          <li><a href="appointments.html">View Requests</a></li>
+          <li><a href="#">Privacy Policy</a></li>
+          <li><a href="#">Terms of Use</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <span>© 2025 MediLinks. All rights reserved.</span>
+      <span>Made with ❤️ for better healthcare access</span>
+    </div>
+  </footer>
+
+</div><!-- /page-wrapper -->
+
+<script src="script.js"></script>
+</body>
+</html>

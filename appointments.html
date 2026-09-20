@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Appointments dashboard for MediLinks appointment requests stored in LocalStorage." />
+  <title>Appointments - MediLinks</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" href="data:image/svg+xml,&lt;svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'&gt;&lt;text y='.9em' font-size='90'&gt;&#127973;&lt;/text&gt;&lt;/svg&gt;" />
+</head>
+<body>
+<nav class="navbar" role="navigation" aria-label="Main navigation">
+  <a href="index.html" class="navbar__brand">
+    <div class="navbar__brand-icon" aria-hidden="true">+</div>
+    MediLinks
+  </a>
+  <ul class="navbar__links" id="navLinks" role="list">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="contact.html">Contact</a></li>
+    <li><a href="appointments.html" class="active" aria-current="page">Appointments</a></li>
+    <li><a href="contact.html" class="navbar__cta">Book Appointment</a></li>
+  </ul>
+  <button class="navbar__hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+
+<div class="page-wrapper">
+  <section class="appointments-hero">
+    <div class="appointments-hero__inner">
+      <div>
+        <span class="section__label appointments-hero__label">Appointment Dashboard</span>
+        <h1 class="appointments-hero__title">Manage saved appointment requests in one place.</h1>
+        <p class="appointments-hero__copy">
+          This page reads every appointment request stored in LocalStorage for this browser, then displays each one in responsive cards.
+        </p>
+        <div class="appointments-hero__actions">
+          <a class="btn-primary" href="contact.html">Book Another Appointment</a>
+          <a class="btn-ghost" href="about.html">Learn More</a>
+        </div>
+      </div>
+      <div class="appointments-hero__panel">
+        <p class="appointments-hero__panel-label">Current browser storage</p>
+        <strong id="appointmentCount" class="appointments-hero__count">0 requests saved</strong>
+        <p class="appointments-hero__panel-copy">Delete individual requests or clear the full list at any time.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section appointments-section" aria-labelledby="appointmentsTitle">
+    <div class="appointments-toolbar">
+      <div>
+        <span class="section__label">Saved Requests</span>
+        <h2 class="section__title" id="appointmentsTitle">Appointment submissions</h2>
+        <p class="section__sub">Patient name, email, health query, and submission date are loaded dynamically from LocalStorage.</p>
+      </div>
+      <button type="button" class="btn-ghost appointments-clear" id="clearAppointmentsBtn">Clear All Requests</button>
+    </div>
+
+    <div class="appointments-grid" id="appointmentsList" aria-live="polite"></div>
+  </section>
+
+  <footer role="contentinfo">
+    <div class="footer__grid">
+      <div>
+        <div class="footer__brand-name">
+          <div class="icon">+</div>
+          MediLinks
+        </div>
+        <p class="footer__desc">India's trusted healthcare connection platform. Find doctors, book appointments, and access emergency support all in one place.</p>
+      </div>
+      <div>
+        <div class="footer__heading">Navigation</div>
+        <ul class="footer__links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="appointments.html">Appointments</a></li>
+        </ul>
+      </div>
+      <div>
+        <div class="footer__heading">Support</div>
+        <ul class="footer__links">
+          <li><a href="contact.html">Help Centre</a></li>
+          <li><a href="contact.html">Emergency Line</a></li>
+          <li><a href="contact.html">Book Appointment</a></li>
+          <li><a href="appointments.html">View Requests</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <span>&copy; 2025 MediLinks. All rights reserved.</span>
+      <span>Made for better healthcare access</span>
+    </div>
+  </footer>
+</div>
+
+<script src="script.js"></script>
+<script src="appointments.js"></script>
+</body>
+</html>
