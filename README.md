@@ -11,6 +11,16 @@
 
 ---
 
+## 📸 Portal Interface & Booking Engine Preview
+
+<p align="center">
+  <img src="assets/medilink_preview.jpg" width="100%" alt="MediLinks Portal Interface & Appointment Booking Dashboard" style="border-radius: 10px; box-shadow: 0 4px 20px rgba(0,0,0,0.15);" />
+</p>
+
+*Modern hospital dashboard featuring verified doctor lookup, department triage (Cardiology, Pediatrics), slot reservation, and patient reviews.*
+
+---
+
 ## 🌟 Key Features
 
 * **🩺 Doctor Discovery & Specialist Directory:** Search and browse qualified medical professionals across Cardiology, Pediatrics, Neurology, Orthopedics, and General Medicine.
